@@ -17,6 +17,10 @@
 		69493E9C245A177C001B9D15 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493E9B245A177C001B9D15 /* Progress.storyboard */; };
 		69493E9E245A1786001B9D15 /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493E9D245A1786001B9D15 /* Goals.storyboard */; };
 		69493EA0245A178F001B9D15 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493E9F245A178F001B9D15 /* Profile.storyboard */; };
+		ECD3997B2460379100AD961E /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3997A2460379100AD961E /* cardView.swift */; };
+		ECD3997D246037E900AD961E /* progressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3997C246037E900AD961E /* progressView.swift */; };
+		ECD3997F2460380E00AD961E /* fontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3997E2460380E00AD961E /* fontFamily.swift */; };
+		ECD399812460382500AD961E /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD399802460382500AD961E /* colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		69493E9B245A177C001B9D15 /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		69493E9D245A1786001B9D15 /* Goals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
 		69493E9F245A178F001B9D15 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		ECD3997A2460379100AD961E /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
+		ECD3997C246037E900AD961E /* progressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressView.swift; sourceTree = "<group>"; };
+		ECD3997E2460380E00AD961E /* fontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontFamily.swift; sourceTree = "<group>"; };
+		ECD399802460382500AD961E /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,7 @@
 		69493E9A245A1682001B9D15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECD399792460364300AD961E /* progressView */,
 				69493E98245A1666001B9D15 /* TabBar.storyboard */,
 				69493E9B245A177C001B9D15 /* Progress.storyboard */,
 				69493E9D245A1786001B9D15 /* Goals.storyboard */,
@@ -140,6 +149,17 @@
 				69493E732459C746001B9D15 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		ECD399792460364300AD961E /* progressView */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3997A2460379100AD961E /* cardView.swift */,
+				ECD3997C246037E900AD961E /* progressView.swift */,
+				ECD3997E2460380E00AD961E /* fontFamily.swift */,
+				ECD399802460382500AD961E /* colors.swift */,
+			);
+			path = progressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD3997B2460379100AD961E /* cardView.swift in Sources */,
+				ECD399812460382500AD961E /* colors.swift in Sources */,
+				ECD3997D246037E900AD961E /* progressView.swift in Sources */,
+				ECD3997F2460380E00AD961E /* fontFamily.swift in Sources */,
 				69493E692459C741001B9D15 /* AppDelegate.swift in Sources */,
 				69493E6B2459C741001B9D15 /* SceneDelegate.swift in Sources */,
 			);
