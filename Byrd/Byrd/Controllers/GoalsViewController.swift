@@ -46,12 +46,14 @@ extension GoalsViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return lists.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let list = lists[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "GoalsListTableViewCell") as! GoalsListTableViewCell
+        
+        
         cell.setGoal(list: list)
-        return cell 
+        return cell
         
     }
 }
