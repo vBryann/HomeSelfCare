@@ -10,8 +10,8 @@ import UIKit
 
 class GoalsListTableViewCell: UITableViewCell{
 
-    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
     
     func setGoal(list: GoalsList){
         iconImageView.image = list.icon
