@@ -19,6 +19,7 @@
 		69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493EB9245B54E2001B9D15 /* GoalsListTableViewCell.swift */; };
 		69493EBC245B56AE001B9D15 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493EBB245B56AE001B9D15 /* Goals.swift */; };
 		69C02059245CCF6A00CDC30F /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C02058245CCF6A00CDC30F /* Goals.storyboard */; };
+		FFD0FAD92462F41200EC3C16 /* logoIcon white.png in Resources */ = {isa = PBXBuildFile; fileRef = FFD0FAD82462F41100EC3C16 /* logoIcon white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		69493EB9245B54E2001B9D15 /* GoalsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListTableViewCell.swift; sourceTree = "<group>"; };
 		69493EBB245B56AE001B9D15 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		69C02058245CCF6A00CDC30F /* Goals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
+		FFD0FAD82462F41100EC3C16 /* logoIcon white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoIcon white.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				69493EA8245B0B51001B9D15 /* Controllers */,
 				69493E9A245A1682001B9D15 /* View */,
 				69493E762459C746001B9D15 /* Info.plist */,
+				FFD0FAD82462F41100EC3C16 /* logoIcon white.png */,
 			);
 			path = Byrd;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD0FAD92462F41200EC3C16 /* logoIcon white.png in Resources */,
 				69493E752459C746001B9D15 /* LaunchScreen.storyboard in Resources */,
 				69493E99245A1666001B9D15 /* TabBar.storyboard in Resources */,
 				69493EB6245B12B9001B9D15 /* Progress.storyboard in Resources */,
