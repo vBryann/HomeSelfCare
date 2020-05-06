@@ -15,7 +15,7 @@ class SwitchTableViewCell: UITableViewCell {
         return UINib(nibName: "SwitchTableViewCell", bundle: nil)
     }
    
-    
+    var isObserving = false
     
     @IBOutlet weak var myTitle: UILabel!
     
@@ -26,6 +26,7 @@ class SwitchTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

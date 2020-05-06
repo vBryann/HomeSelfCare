@@ -8,6 +8,7 @@
 
 import UIKit
 
+var contentSetup: String!
 class OptionsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -16,6 +17,7 @@ class OptionsViewController: UIViewController {
     var goalOption: GoalsList?
     var dataPicker: [String] = [String]()
     var selectedIndexPath: IndexPath?
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,35 +39,35 @@ class OptionsViewController: UIViewController {
             tempOption.append(option2)
         
         case 2: //Food Option
-            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 3)
+            let option1 = OptionsList(title: "Goal", content: ["8 cups","5 cups","3 cups","2 cups","1 cups"], id : 3)
             
             tempOption.append(option1)
 
         case 3: //Steps Option
-            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 1)
+            let option1 = OptionsList(title: "Goal", id : 1)
 
             tempOption.append(option1)
 
         case 4: //Active Option
-            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 1)
+            let option1 = OptionsList(title: "Goal", id : 1)
 
             tempOption.append(option1)
         
         case  5: //Sleep Option
-            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 1)
-            let option2 = OptionsList(title: "Reminder", content: "Switch here!", id : 1)
+            let option1 = OptionsList(title: "Goal", id : 1)
+            let option2 = OptionsList(title: "Reminder", id : 1)
             tempOption.append(option1)
             tempOption.append(option2)
         
         case 6:  //Stand Option
-            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 1)
-            let option2 = OptionsList(title: "Reminder", content: "Switch here!", id : 1)
-            let option3 = OptionsList(title: "Next Cup Period", content: "Picker here!", id : 1)
+            let option1 = OptionsList(title: "Goal", id : 1)
+            let option2 = OptionsList(title: "Reminder", id : 1)
+            let option3 = OptionsList(title: "Next Cup Period", id : 1)
             tempOption.append(option1)
             tempOption.append(option2)
             tempOption.append(option3)
         default:
-            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 1)
+            let option1 = OptionsList(title: "Goal", id : 1)
             tempOption.append(option1)
         }
         
@@ -88,7 +90,7 @@ extension OptionsViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let option = options[indexPath.row]
-        switch option.id {
+        switch (option.id){
         case 1:   // UISwitch case
             if let cell = tableView.dequeueReusableCell(withIdentifier: SwitchTableViewCell.indentifier, for:indexPath) as? SwitchTableViewCell{
                 cell.configure(list: option)
@@ -97,50 +99,87 @@ extension OptionsViewController: UITableViewDataSource, UITableViewDelegate{
                 cell.accessoryView = mySwitch
                 return cell
             }
-        case 2: // Title only
+        /*case 2: // Title only
             let cell = tableView.dequeueReusableCell(withIdentifier: SwitchTableViewCell.indentifier, for:indexPath) as! SwitchTableViewCell
             cell.configure(list: option)
             return cell
-        
+        */
         case 3: // Picker case
-            let cell = tableView.dequeueReusableCell(withIdentifier: PickerTableViewCell.indentifier, for:indexPath) as! PickerTableViewCell
-            cell.title.text = option.title
-            return cell
+            let cellP = tableView.dequeueReusableCell(withIdentifier: PickerTableViewCell.indentifier, for:indexPath) as! PickerTableViewCell
+                cellP.title.text = option.title
+                cellP.setContent(list: option)
+                if indexPath != selectedIndexPath {
+                   if let contentSetup = contentSetup {
+                       cellP.contentPicker.text = contentSetup
+                    }
+                } else {
+                    cellP.contentPicker.text = contentSetup
+                }
+                
+                return cellP
             
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: SwitchTableViewCell.indentifier, for:indexPath) as! SwitchTableViewCell
             cell.configure(list: option)
             return cell
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: SwitchTableViewCell.indentifier, for:indexPath) as! SwitchTableViewCell
-        cell.configure(list: option)
-        return cell
         
+        return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
-        (cell as! PickerTableViewCell).watchFrameChanges()
-    }
-    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indePath: IndexPath){
-        (cell as! PickerTableViewCell).ignoreFrameChanges()
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        for cell in tableView.visibleCells {
-            if cell.isKind(of: PickerTableViewCell.self) {
-                (cell  as! PickerTableViewCell).ignoreFrameChanges()
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let previousIndexPath = selectedIndexPath
+            if indexPath == selectedIndexPath {
+                selectedIndexPath = nil
+            } else {
+                selectedIndexPath = indexPath
+            }
+            var indexPaths: Array<IndexPath> = []
+            if let previous = previousIndexPath {
+                indexPaths += [previous]
+            }
+            if let current = selectedIndexPath {
+                indexPaths += [current]
+            }
+            if indexPaths.count > 0 {
+                tableView.reloadRows(at: indexPaths, with: UITableView.RowAnimation.automatic)
+            }
+
+        }
+        
+        func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+            let option = options[indexPath.row]
+            if option.id == 3{
+                (cell as! PickerTableViewCell).watchFrameChanges()
             }
         }
-    }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            if indexPath == selectedIndexPath {
-                return PickerTableViewCell.expandedHeight
-            } else {
-                return PickerTableViewCell.defaultHeight
+        func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath){
+            let option = options[indexPath.row]
+            if option.id == 3{
+                (cell as! PickerTableViewCell).ignoreFrameChanges()
             }
-    }
-    
+        }
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            for cellP in tableView.visibleCells {
+                if cellP.isKind(of: PickerTableViewCell.self) {
+                    (cellP as! PickerTableViewCell).ignoreFrameChanges()
+                }
+            }
+        }
+
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            let option = options[indexPath.row]
+            if option.id == 3{
+                if indexPath == selectedIndexPath {
+                        return PickerTableViewCell.expandedHeight
+                    } else {
+                        return PickerTableViewCell.defaultHeight
+                    }
+            }else{
+               return PickerTableViewCell.defaultHeight
+            }
+        }
     @objc func didChangeSwitch(_ sender: UISwitch){
         if sender.isOn{
             print("is on")

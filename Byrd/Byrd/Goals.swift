@@ -23,10 +23,10 @@ class GoalsList{
 
 class OptionsList {
     var title: String
-    var content: String?
+    var content: [String]?
     var id: Int?
     
-    init(title: String, content: String, id: Int){
+    init(title: String, content: [String], id: Int){
         self.title = title
         self.content = content
         self.id = id

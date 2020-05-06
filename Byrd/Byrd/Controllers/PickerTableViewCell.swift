@@ -16,7 +16,7 @@ class PickerTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDa
         return UINib(nibName: "PickerTableViewCell", bundle: nil)
     }
     var isObserving = false
-    let minutes = Array(0...59)
+    var content : [String] = []
     
     @IBOutlet weak var contentPicker: UILabel!
     @IBOutlet weak var title: UILabel!
@@ -33,31 +33,43 @@ class PickerTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDa
     
     class var expandedHeight: CGFloat {get { return 200}}
     class var defaultHeight: CGFloat {get {return 44}}
+    func setContent(list: OptionsList){
+        content.append(contentsOf: list.content!)
+    }
     
     func checkHeight(){
         pickerView.isHidden = (frame.height < PickerTableViewCell.expandedHeight)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{
-        return 2
+        return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-           return minutes.count
+           return content.count
     }
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 
         let pickerLabel = UILabel()
         var titleData = ""
-        titleData = "\(minutes[row])"
+        titleData = "\(content[row])"
         pickerLabel.text = titleData
+        
+        if contentSetup != nil {
+            contentPicker.text = contentSetup
+        }else{
+            contentPicker.text = "\(content[row])"
+        }
+        
         return pickerLabel
     }
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-        return pickerView.frame.width / 3
+        return pickerView.frame.width/6
+        
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.contentPicker.text = "\(component)\(row)"
+        self.contentPicker.text = "\(content[row])"
+        contentSetup = self.contentPicker.text
     }
     
     
