@@ -14,14 +14,15 @@ class OptionsViewController: UIViewController {
     
     var options : [OptionsList] = []
     var goalOption: GoalsList?
-    
-    
+    var dataPicker: [String] = [String]()
+    var selectedIndexPath: IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         options = createOption()
         navigationItem.title = goalOption?.title
         tableView.register(SwitchTableViewCell.nib(), forCellReuseIdentifier:SwitchTableViewCell.indentifier )
+        tableView.register(PickerTableViewCell.nib(), forCellReuseIdentifier:PickerTableViewCell.indentifier )
     }
     
     func createOption() -> [OptionsList]{
@@ -36,7 +37,7 @@ class OptionsViewController: UIViewController {
             tempOption.append(option2)
         
         case 2: //Food Option
-            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 1)
+            let option1 = OptionsList(title: "Goal", content: "Picker here!", id : 3)
             
             tempOption.append(option1)
 
@@ -78,10 +79,12 @@ class OptionsViewController: UIViewController {
     
 }
 extension OptionsViewController: UITableViewDataSource, UITableViewDelegate{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return options.count
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let option = options[indexPath.row]
@@ -94,11 +97,16 @@ extension OptionsViewController: UITableViewDataSource, UITableViewDelegate{
                 cell.accessoryView = mySwitch
                 return cell
             }
-        case 2:
+        case 2: // Title only
             let cell = tableView.dequeueReusableCell(withIdentifier: SwitchTableViewCell.indentifier, for:indexPath) as! SwitchTableViewCell
             cell.configure(list: option)
             return cell
         
+        case 3: // Picker case
+            let cell = tableView.dequeueReusableCell(withIdentifier: PickerTableViewCell.indentifier, for:indexPath) as! PickerTableViewCell
+            cell.title.text = option.title
+            return cell
+            
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: SwitchTableViewCell.indentifier, for:indexPath) as! SwitchTableViewCell
             cell.configure(list: option)
@@ -110,6 +118,29 @@ extension OptionsViewController: UITableViewDataSource, UITableViewDelegate{
         
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+        (cell as! PickerTableViewCell).watchFrameChanges()
+    }
+    func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indePath: IndexPath){
+        (cell as! PickerTableViewCell).ignoreFrameChanges()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        for cell in tableView.visibleCells {
+            if cell.isKind(of: PickerTableViewCell.self) {
+                (cell  as! PickerTableViewCell).ignoreFrameChanges()
+            }
+        }
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            if indexPath == selectedIndexPath {
+                return PickerTableViewCell.expandedHeight
+            } else {
+                return PickerTableViewCell.defaultHeight
+            }
+    }
+    
     @objc func didChangeSwitch(_ sender: UISwitch){
         if sender.isOn{
             print("is on")
@@ -117,4 +148,7 @@ extension OptionsViewController: UITableViewDataSource, UITableViewDelegate{
             print("is off")
         }
     }
+
 }
+
+

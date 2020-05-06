@@ -22,6 +22,10 @@
 		69C0205D24604FE500CDC30F /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0205C24604FE500CDC30F /* OptionsViewController.swift */; };
 		69C0206224619AF700CDC30F /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0206024619AF700CDC30F /* SwitchTableViewCell.swift */; };
 		69C0206324619AF700CDC30F /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C0206124619AF700CDC30F /* SwitchTableViewCell.xib */; };
+		69C0206A2461FA6600CDC30F /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C020682461FA6600CDC30F /* PickerTableViewCell.swift */; };
+		69C0206B2461FA6600CDC30F /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C020692461FA6600CDC30F /* PickerTableViewCell.xib */; };
+		69C0206E2462193900CDC30F /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */; };
+		69C0206F2462193900CDC30F /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		69C0205C24604FE500CDC30F /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		69C0206024619AF700CDC30F /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		69C0206124619AF700CDC30F /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchTableViewCell.xib; sourceTree = "<group>"; };
+		69C020682461FA6600CDC30F /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		69C020692461FA6600CDC30F /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
+		69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,10 @@
 				69C0205C24604FE500CDC30F /* OptionsViewController.swift */,
 				69C0206024619AF700CDC30F /* SwitchTableViewCell.swift */,
 				69C0206124619AF700CDC30F /* SwitchTableViewCell.xib */,
+				69C020682461FA6600CDC30F /* PickerTableViewCell.swift */,
+				69C020692461FA6600CDC30F /* PickerTableViewCell.xib */,
+				69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */,
+				69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,10 +283,12 @@
 			files = (
 				69493E752459C746001B9D15 /* LaunchScreen.storyboard in Resources */,
 				69493E99245A1666001B9D15 /* TabBar.storyboard in Resources */,
+				69C0206B2461FA6600CDC30F /* PickerTableViewCell.xib in Resources */,
 				69493EB6245B12B9001B9D15 /* Progress.storyboard in Resources */,
 				69C0206324619AF700CDC30F /* SwitchTableViewCell.xib in Resources */,
 				69493E722459C746001B9D15 /* Assets.xcassets in Resources */,
 				69C02059245CCF6A00CDC30F /* Goals.storyboard in Resources */,
+				69C0206F2462193900CDC30F /* TextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +318,8 @@
 				69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */,
 				69493E692459C741001B9D15 /* AppDelegate.swift in Sources */,
 				69C0205D24604FE500CDC30F /* OptionsViewController.swift in Sources */,
+				69C0206A2461FA6600CDC30F /* PickerTableViewCell.swift in Sources */,
+				69C0206E2462193900CDC30F /* TextFieldTableViewCell.swift in Sources */,
 				69493E6B2459C741001B9D15 /* SceneDelegate.swift in Sources */,
 				69493EB8245B54C1001B9D15 /* GoalsViewController.swift in Sources */,
 			);
