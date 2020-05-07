@@ -11,6 +11,13 @@ import UIKit
 
 class FoodView : UIView {
     
+    let iconImageView : UIImageView = {
+        var icon = UIImageView()
+        icon = UIImageView(image: #imageLiteral(resourceName: "Group 89"))
+        icon.frame = CGRect(origin: CGPoint(x: 155, y: 90), size: CGSize(width: 64, height: 80))
+        return icon
+    }()
+    
     let proteinCard : CardView = {
         
            let card = CardView()
@@ -105,8 +112,41 @@ class FoodView : UIView {
         return card
     }()
     
+    let dateLabel : UILabel = {
+   let  dateLabel = UILabel ()
+        dateLabel.textColor = .greyDesc
+    dateLabel.text = "13 de October de 2020 - 19 de October de 2020"
+        dateLabel.frame = CGRect(origin: CGPoint(x: 9, y: 249), size: CGSize(width: 358, height: 15))
+        dateLabel.font = sfRounded(size: 13)
+        dateLabel.textAlignment = .center
+    return dateLabel
+    }()
+    
+    let remainCalories: remainView = {
+        let card = remainView()
+        card.remainOne.text = "Remain Calories"
+        card.data.text = "800"
+        return card
+    }()
+    
+    let remainProtein : remainView = {
+        let card = remainView()
+        card.remainOne.text = "Remain Protein"
+        card.remainOne.frame = CGRect(origin: CGPoint(x: 128, y: 518), size: CGSize(width: 120, height: 14))
+        card.data.text = "28"
+        card.data.frame.origin.x = 128
+        return card
+    }()
     
     
+    let remainCarb : remainView = {
+        let card = remainView()
+        card.remainOne.frame = CGRect(origin: CGPoint(x: 248, y: 518), size: CGSize(width: 120, height: 14))
+        card.remainOne.text = "Remain Carb"
+        card.data.text = "70"
+        card.data.frame.origin.x = 248
+        return card
+    }()
     
     override init(frame: CGRect) {
            super.init(frame: frame)
@@ -118,9 +158,14 @@ class FoodView : UIView {
            setupView()
        }
     func setupView(){
+        addSubview(iconImageView)
+        addSubview(dateLabel)
         addSubview(proteinCard)
         addSubview(carbCard)
         addSubview(fatCard)
+        addSubview(remainCarb)
+        addSubview(remainCalories)
+        addSubview(remainProtein)
     }
     
 }

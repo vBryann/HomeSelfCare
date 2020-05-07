@@ -19,9 +19,10 @@
 		69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493EB9245B54E2001B9D15 /* GoalsListTableViewCell.swift */; };
 		69493EBC245B56AE001B9D15 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493EBB245B56AE001B9D15 /* Goals.swift */; };
 		69C02059245CCF6A00CDC30F /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C02058245CCF6A00CDC30F /* Goals.storyboard */; };
-		EC548A2B2461A140000737E2 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A2A2461A140000737E2 /* extension.swift */; };
-		EC548A312461AF5F000737E2 /* foodDailyViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A302461AF5F000737E2 /* foodDailyViewControllerViewController.swift */; };
+		EC548A312461AF5F000737E2 /* foodDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A302461AF5F000737E2 /* foodDailyViewController.swift */; };
 		EC548A332461AFC0000737E2 /* FoodDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A322461AFC0000737E2 /* FoodDailyView.swift */; };
+		EC7211772462E0A6006427A5 /* remainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7211762462E0A6006427A5 /* remainView.swift */; };
+		EC72117B2462ECD5006427A5 /* foodMonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */; };
 		ECFB9930246045D60076E8FC /* progressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB992F246045D60076E8FC /* progressViewController.swift */; };
 		ECFB9932246045EB0076E8FC /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9931246045EB0076E8FC /* colors.swift */; };
 		ECFB9934246045F50076E8FC /* fontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9933246045F50076E8FC /* fontFamily.swift */; };
@@ -65,9 +66,10 @@
 		69493EB9245B54E2001B9D15 /* GoalsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListTableViewCell.swift; sourceTree = "<group>"; };
 		69493EBB245B56AE001B9D15 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		69C02058245CCF6A00CDC30F /* Goals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
-		EC548A2A2461A140000737E2 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
-		EC548A302461AF5F000737E2 /* foodDailyViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDailyViewControllerViewController.swift; sourceTree = "<group>"; };
+		EC548A302461AF5F000737E2 /* foodDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDailyViewController.swift; sourceTree = "<group>"; };
 		EC548A322461AFC0000737E2 /* FoodDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDailyView.swift; sourceTree = "<group>"; };
+		EC7211762462E0A6006427A5 /* remainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remainView.swift; sourceTree = "<group>"; };
+		EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodMonthlyViewController.swift; sourceTree = "<group>"; };
 		ECFB992F246045D60076E8FC /* progressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressViewController.swift; sourceTree = "<group>"; };
 		ECFB9931246045EB0076E8FC /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 		ECFB9933246045F50076E8FC /* fontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontFamily.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		EC548A2E2461AE01000737E2 /* FoodView */ = {
 			isa = PBXGroup;
 			children = (
+				EC7211792462ECB3006427A5 /* Monthly */,
 				EC548A2F2461AF30000737E2 /* Daily */,
 			);
 			path = FoodView;
@@ -184,10 +187,18 @@
 		EC548A2F2461AF30000737E2 /* Daily */ = {
 			isa = PBXGroup;
 			children = (
-				EC548A302461AF5F000737E2 /* foodDailyViewControllerViewController.swift */,
+				EC548A302461AF5F000737E2 /* foodDailyViewController.swift */,
 				EC548A322461AFC0000737E2 /* FoodDailyView.swift */,
 			);
 			path = Daily;
+			sourceTree = "<group>";
+		};
+		EC7211792462ECB3006427A5 /* Monthly */ = {
+			isa = PBXGroup;
+			children = (
+				EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */,
+			);
+			path = Monthly;
 			sourceTree = "<group>";
 		};
 		ECFB992E246045A10076E8FC /* progressView */ = {
@@ -199,7 +210,7 @@
 				ECFB9933246045F50076E8FC /* fontFamily.swift */,
 				ECFB9935246046070076E8FC /* progressView.swift */,
 				ECFB9937246046150076E8FC /* cardView.swift */,
-				EC548A2A2461A140000737E2 /* extension.swift */,
+				EC7211762462E0A6006427A5 /* remainView.swift */,
 			);
 			path = progressView;
 			sourceTree = "<group>";
@@ -342,13 +353,14 @@
 				ECFB9932246045EB0076E8FC /* colors.swift in Sources */,
 				69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */,
 				ECFB9938246046150076E8FC /* cardView.swift in Sources */,
+				EC72117B2462ECD5006427A5 /* foodMonthlyViewController.swift in Sources */,
 				ECFB9934246045F50076E8FC /* fontFamily.swift in Sources */,
 				ECFB9936246046070076E8FC /* progressView.swift in Sources */,
-				EC548A2B2461A140000737E2 /* extension.swift in Sources */,
 				69493E692459C741001B9D15 /* AppDelegate.swift in Sources */,
 				EC548A332461AFC0000737E2 /* FoodDailyView.swift in Sources */,
 				69493E6B2459C741001B9D15 /* SceneDelegate.swift in Sources */,
-				EC548A312461AF5F000737E2 /* foodDailyViewControllerViewController.swift in Sources */,
+				EC548A312461AF5F000737E2 /* foodDailyViewController.swift in Sources */,
+				EC7211772462E0A6006427A5 /* remainView.swift in Sources */,
 				69493EB8245B54C1001B9D15 /* GoalsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

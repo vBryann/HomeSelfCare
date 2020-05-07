@@ -10,14 +10,26 @@
         <!--Progress-->
         <scene sceneID="Ujd-5Q-ZlR">
             <objects>
-                <viewController id="4fV-yJ-0XO" customClass="foodDailyViewControllerViewController" customModule="Byrd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4fV-yJ-0XO" customClass="progressViewController" customModule="Byrd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hvH-t8-3nO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4S8-3g-NGo">
+                                <rect key="frame" x="320" y="151" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vnj-9P-ymK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Progress" id="5cU-wj-aeV"/>
+                    <connections>
+                        <segue destination="6qL-OX-3nQ" kind="show" id="HzU-7j-Zyh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VNz-7w-zjA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,6 +54,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63m-t3-skz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382.60869565217394" y="108.48214285714285"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="ta6-aI-tVJ">
+            <objects>
+                <viewControllerPlaceholder id="Fqx-tc-IWm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ash-j3-dAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="442"/>
+        </scene>
+        <!--Food Daily View Controller-->
+        <scene sceneID="H82-8w-WRz">
+            <objects>
+                <viewController storyboardIdentifier="foodDailyViewController" id="6qL-OX-3nQ" customClass="foodDailyViewController" customModule="Byrd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrc-3K-yg0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Yrd-Hd-gSb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ooz-S5-ci4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lwx-Oy-8UU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2136" y="108"/>
         </scene>
     </scenes>
     <resources>

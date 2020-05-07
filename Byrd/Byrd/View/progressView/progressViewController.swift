@@ -60,6 +60,7 @@ class progressViewController: UIViewController {
         super.viewDidLoad()
         self.view = progressView
         self.view.backgroundColor = UIColor.white
+        
         view.addSubview(cardBlankWater)
         view.addSubview(cardBlankFood)
         view.addSubview(cardBlankSteps)
@@ -67,24 +68,21 @@ class progressViewController: UIViewController {
         view.addSubview(cardBlankSleep)
         view.addSubview(cardBlankStand)
         
-        cardBlankWater.addGestureRecognizer(UITapGestureRecognizer(target: cardBlankWater, action: #selector(UIView.toPrint)))
-        
-        cardBlankFood.addGestureRecognizer(UITapGestureRecognizer(target: cardBlankFood, action: #selector(UIView.toPrint)))
-        
-        
-        cardBlankSteps.addGestureRecognizer(UITapGestureRecognizer(target: cardBlankSteps, action: #selector(UIView.toPrint)))
-        
-        
-        cardBlankBlaze.addGestureRecognizer(UITapGestureRecognizer(target: cardBlankBlaze, action: #selector(UIView.toPrint)))
-        
-        cardBlankSleep.addGestureRecognizer(UITapGestureRecognizer(target: cardBlankSleep, action: #selector(UIView.toPrint)))
-        
-        cardBlankStand.addGestureRecognizer(UITapGestureRecognizer(target: cardBlankStand, action: #selector(UIView.toPrint)))
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        cardBlankFood.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goFood)))
+               
     }
+    
+    @objc func goFood() {
+        let sampleStoryBoard : UIStoryboard = UIStoryboard(name: "Progress", bundle:nil)
+        
+        let foodView  = sampleStoryBoard.instantiateViewController(withIdentifier: "foodDailyViewController") as! foodDailyViewController
+        
+        self.navigationController?.pushViewController(foodView, animated: true)
+    }
+ 
+    
 }
