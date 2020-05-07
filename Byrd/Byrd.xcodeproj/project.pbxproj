@@ -31,6 +31,15 @@
 		FF95B98424649D64008B4147 /* GSActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98324649D64008B4147 /* GSActivityViewController.swift */; };
 		FF95B98624649D70008B4147 /* GSProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98524649D70008B4147 /* GSProgressViewController.swift */; };
 		FF95B98824649E87008B4147 /* logoIcon white.png in Resources */ = {isa = PBXBuildFile; fileRef = FF95B98724649E87008B4147 /* logoIcon white.png */; };
+		EC548A312461AF5F000737E2 /* foodDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A302461AF5F000737E2 /* foodDailyViewController.swift */; };
+		EC548A332461AFC0000737E2 /* FoodDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A322461AFC0000737E2 /* FoodDailyView.swift */; };
+		EC7211772462E0A6006427A5 /* remainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7211762462E0A6006427A5 /* remainView.swift */; };
+		EC72117B2462ECD5006427A5 /* foodMonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */; };
+		ECFB9930246045D60076E8FC /* progressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB992F246045D60076E8FC /* progressViewController.swift */; };
+		ECFB9932246045EB0076E8FC /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9931246045EB0076E8FC /* colors.swift */; };
+		ECFB9934246045F50076E8FC /* fontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9933246045F50076E8FC /* fontFamily.swift */; };
+		ECFB9936246046070076E8FC /* progressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9935246046070076E8FC /* progressView.swift */; };
+		ECFB9938246046150076E8FC /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9937246046150076E8FC /* cardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +90,15 @@
 		FF95B98324649D64008B4147 /* GSActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSActivityViewController.swift; sourceTree = "<group>"; };
 		FF95B98524649D70008B4147 /* GSProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSProgressViewController.swift; sourceTree = "<group>"; };
 		FF95B98724649E87008B4147 /* logoIcon white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoIcon white.png"; sourceTree = "<group>"; };
+		EC548A302461AF5F000737E2 /* foodDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDailyViewController.swift; sourceTree = "<group>"; };
+		EC548A322461AFC0000737E2 /* FoodDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDailyView.swift; sourceTree = "<group>"; };
+		EC7211762462E0A6006427A5 /* remainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remainView.swift; sourceTree = "<group>"; };
+		EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodMonthlyViewController.swift; sourceTree = "<group>"; };
+		ECFB992F246045D60076E8FC /* progressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressViewController.swift; sourceTree = "<group>"; };
+		ECFB9931246045EB0076E8FC /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		ECFB9933246045F50076E8FC /* fontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontFamily.swift; sourceTree = "<group>"; };
+		ECFB9935246046070076E8FC /* progressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressView.swift; sourceTree = "<group>"; };
+		ECFB9937246046150076E8FC /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +181,7 @@
 		69493E9A245A1682001B9D15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECFB992E246045A10076E8FC /* progressView */,
 				69493E98245A1666001B9D15 /* TabBar.storyboard */,
 				69493EB5245B12B9001B9D15 /* Progress.storyboard */,
 				69C02058245CCF6A00CDC30F /* Goals.storyboard */,
@@ -190,6 +209,46 @@
 				FF95B98524649D70008B4147 /* GSProgressViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC548A2E2461AE01000737E2 /* FoodView */ = {
+			isa = PBXGroup;
+			children = (
+				EC7211792462ECB3006427A5 /* Monthly */,
+				EC548A2F2461AF30000737E2 /* Daily */,
+			);
+			path = FoodView;
+			sourceTree = "<group>";
+		};
+		EC548A2F2461AF30000737E2 /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				EC548A302461AF5F000737E2 /* foodDailyViewController.swift */,
+				EC548A322461AFC0000737E2 /* FoodDailyView.swift */,
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		EC7211792462ECB3006427A5 /* Monthly */ = {
+			isa = PBXGroup;
+			children = (
+				EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */,
+			);
+			path = Monthly;
+			sourceTree = "<group>";
+		};
+		ECFB992E246045A10076E8FC /* progressView */ = {
+			isa = PBXGroup;
+			children = (
+				EC548A2E2461AE01000737E2 /* FoodView */,
+				ECFB992F246045D60076E8FC /* progressViewController.swift */,
+				ECFB9931246045EB0076E8FC /* colors.swift */,
+				ECFB9933246045F50076E8FC /* fontFamily.swift */,
+				ECFB9935246046070076E8FC /* progressView.swift */,
+				ECFB9937246046150076E8FC /* cardView.swift */,
+				EC7211762462E0A6006427A5 /* remainView.swift */,
+			);
+			path = progressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,12 +392,21 @@
 				69493EBC245B56AE001B9D15 /* Goals.swift in Sources */,
 				69C0206224619AF700CDC30F /* SwitchTableViewCell.swift in Sources */,
 				FF95B98224649D40008B4147 /* GSViewController.swift in Sources */,
+				ECFB9930246045D60076E8FC /* progressViewController.swift in Sources */,
+				ECFB9932246045EB0076E8FC /* colors.swift in Sources */,
 				69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */,
+				ECFB9938246046150076E8FC /* cardView.swift in Sources */,
+				EC72117B2462ECD5006427A5 /* foodMonthlyViewController.swift in Sources */,
+				ECFB9934246045F50076E8FC /* fontFamily.swift in Sources */,
+				ECFB9936246046070076E8FC /* progressView.swift in Sources */,
 				69493E692459C741001B9D15 /* AppDelegate.swift in Sources */,
 				69C0205D24604FE500CDC30F /* OptionsViewController.swift in Sources */,
 				69C0206A2461FA6600CDC30F /* PickerTableViewCell.swift in Sources */,
 				69C0206E2462193900CDC30F /* TextFieldTableViewCell.swift in Sources */,
+				EC548A332461AFC0000737E2 /* FoodDailyView.swift in Sources */,
 				69493E6B2459C741001B9D15 /* SceneDelegate.swift in Sources */,
+				EC548A312461AF5F000737E2 /* foodDailyViewController.swift in Sources */,
+				EC7211772462E0A6006427A5 /* remainView.swift in Sources */,
 				69493EB8245B54C1001B9D15 /* GoalsViewController.swift in Sources */,
 				FF95B98424649D64008B4147 /* GSActivityViewController.swift in Sources */,
 				FF95B98624649D70008B4147 /* GSProgressViewController.swift in Sources */,
@@ -508,7 +576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Byrd/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,7 +594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Byrd/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
