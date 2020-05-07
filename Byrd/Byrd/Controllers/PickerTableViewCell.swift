@@ -53,18 +53,13 @@ class PickerTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDa
         var titleData = ""
         titleData = "\(content[row])"
         pickerLabel.text = titleData
+        contentPicker.text = "\(content[row])"
         
-        if contentSetup != nil {
-            contentPicker.text = contentSetup
-        }else{
-            contentPicker.text = "\(content[row])"
-        }
         
         return pickerLabel
     }
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-        return pickerView.frame.width/6
-        
+        return pickerView.frame.width/4
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

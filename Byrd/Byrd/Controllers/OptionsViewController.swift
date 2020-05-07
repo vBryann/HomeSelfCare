@@ -22,6 +22,7 @@ class OptionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         options = createOption()
+        tableView.tableFooterView = UIView(frame: .zero)
         navigationItem.title = goalOption?.title
         tableView.register(SwitchTableViewCell.nib(), forCellReuseIdentifier:SwitchTableViewCell.indentifier )
         tableView.register(PickerTableViewCell.nib(), forCellReuseIdentifier:PickerTableViewCell.indentifier )
@@ -34,38 +35,41 @@ class OptionsViewController: UIViewController {
         
         case 1: //Water Option
             let option1 = OptionsList(title: "Notifications",id : 1)
-            let option2 = OptionsList(title: "Goal", id : 2)
+            let option2 = OptionsList(title: "Goal",content: ["8 Cups","9 Cups","10 Cups","11 Cups"] , id : 3)
+            let option3 = OptionsList(title: "Next Cup Period", content: ["15 Min","20 Min","30 Min"], id: 3)
             tempOption.append(option1)
             tempOption.append(option2)
+            tempOption.append(option3)
         
         case 2: //Food Option
-            let option1 = OptionsList(title: "Goal", content: ["8 cups","5 cups","3 cups","2 cups","1 cups"], id : 3)
-            
+            let option1 = OptionsList(title: "Goal", content: ["1000 Kcal","1200 Kcal","1400 Kcal"], id : 3)
+            let option2 = OptionsList(title: "Calories Consumed", id: 2)
+            let option3 = OptionsList(title: "Protein Consumed", id: 2)
+            let option4 = OptionsList(title: "Carbohydrates Consumed", id: 2)
+            let option5 = OptionsList(title: "Fat Consumed", id: 2)
             tempOption.append(option1)
+            tempOption.append(option2)
+            tempOption.append(option3)
+            tempOption.append(option4)
+            tempOption.append(option5)
 
         case 3: //Steps Option
-            let option1 = OptionsList(title: "Goal", id : 1)
+            let option1 = OptionsList(title: "Goal",content: ["1 hr","1 hr 30 min", "2 hr" ], id : 3)
 
             tempOption.append(option1)
 
         case 4: //Active Option
-            let option1 = OptionsList(title: "Goal", id : 1)
+            let option1 = OptionsList(title: "Goal", content: ["1000 Kcal","1200 Kcal","1400 Kcal"], id : 3)
 
             tempOption.append(option1)
         
         case  5: //Sleep Option
-            let option1 = OptionsList(title: "Goal", id : 1)
-            let option2 = OptionsList(title: "Reminder", id : 1)
+            let option1 = OptionsList(title: "Goal",content: ["8 hr","7 hr 30 min", "6 hr" ], id : 3)
             tempOption.append(option1)
-            tempOption.append(option2)
         
         case 6:  //Stand Option
-            let option1 = OptionsList(title: "Goal", id : 1)
-            let option2 = OptionsList(title: "Reminder", id : 1)
-            let option3 = OptionsList(title: "Next Cup Period", id : 1)
+            let option1 = OptionsList(title: "Goal",content: ["1 hr","1 hr 30 min", "2 hr" ], id : 3)
             tempOption.append(option1)
-            tempOption.append(option2)
-            tempOption.append(option3)
         default:
             let option1 = OptionsList(title: "Goal", id : 1)
             tempOption.append(option1)
@@ -180,6 +184,23 @@ extension OptionsViewController: UITableViewDataSource, UITableViewDelegate{
                return PickerTableViewCell.defaultHeight
             }
         }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+
+        let result = UIView()
+
+        // recreate insets from existing ones in the table view
+        //let insets = tableView.separatorInset
+        //let width = tableView.bounds.width - insets.left - insets.right
+        let sepFrame = CGRect(x: 0, y: -0.5, width: 600, height: 0.5)
+
+        // create layer with separator, setting color
+        let sep = CALayer()
+        sep.frame = sepFrame
+        sep.backgroundColor = tableView.separatorColor?.cgColor
+        result.layer.addSublayer(sep)
+
+        return result
+    }
     @objc func didChangeSwitch(_ sender: UISwitch){
         if sender.isOn{
             print("is on")

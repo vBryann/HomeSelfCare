@@ -17,7 +17,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HO9-oM-snc">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="GoalsListTableViewCell" textLabel="tXA-OQ-pXp" imageView="2Df-2I-dWL" style="IBUITableViewCellStyleDefault" id="azZ-mr-lda" customClass="GoalsListTableViewCell" customModule="Byrd" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
@@ -39,6 +39,7 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <connections>
                                             <outlet property="iconImageView" destination="2Df-2I-dWL" id="feW-H9-Vma"/>
                                             <outlet property="titleLabel" destination="tXA-OQ-pXp" id="BBe-1w-ruB"/>
@@ -68,13 +69,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uy8-A0-WAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.7101449275362" y="89.732142857142847"/>
+            <point key="canvasLocation" x="1079.2" y="89.505247376311857"/>
         </scene>
         <!--Goals-->
         <scene sceneID="tlG-cH-hAo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t3g-rz-Fd0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Goals" image="Group 42" selectedImage="Group 42_selected" id="LWT-q7-w9F"/>
+                    <tabBarItem key="tabBarItem" title="Goals" image="Group 93" selectedImage="Group 93_selected" id="LWT-q7-w9F"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wGa-vk-5SK">
@@ -100,7 +101,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="70B-dG-uV5">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="43.5" id="ye7-fu-rjB">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
@@ -109,6 +110,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -138,7 +140,7 @@
     </scenes>
     <resources>
         <image name="ActiveIcon" width="29" height="29"/>
-        <image name="Group 42" width="24" height="23.5"/>
-        <image name="Group 42_selected" width="24" height="23.5"/>
+        <image name="Group 93" width="23.5" height="24"/>
+        <image name="Group 93_selected" width="23.5" height="24"/>
     </resources>
 </document>

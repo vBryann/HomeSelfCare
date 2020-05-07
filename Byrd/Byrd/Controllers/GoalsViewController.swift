@@ -18,7 +18,7 @@ class GoalsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         lists = createList()
-        
+        tableView.tableFooterView = UIView(frame: .zero)
     }
     
     func createList() -> [GoalsList]{
@@ -65,5 +65,22 @@ extension GoalsViewController: UITableViewDataSource,UITableViewDelegate{
         cell.setGoal(list: list)
         return cell
         
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+
+        let result = UIView()
+
+        // recreate insets from existing ones in the table view
+        //let insets = tableView.separatorInset
+        //let width = tableView.bounds.width - insets.left - insets.right
+        let sepFrame = CGRect(x: 0, y: -0.5, width: 600, height: 0.5)
+
+        // create layer with separator, setting color
+        let sep = CALayer()
+        sep.frame = sepFrame
+        sep.backgroundColor = tableView.separatorColor?.cgColor
+        result.layer.addSublayer(sep)
+
+        return result
     }
 }
