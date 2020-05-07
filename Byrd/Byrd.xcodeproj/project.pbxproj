@@ -26,6 +26,11 @@
 		69C0206B2461FA6600CDC30F /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C020692461FA6600CDC30F /* PickerTableViewCell.xib */; };
 		69C0206E2462193900CDC30F /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */; };
 		69C0206F2462193900CDC30F /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */; };
+		FF95B98024649CB5008B4147 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF95B97F24649CB5008B4147 /* Onboarding.storyboard */; };
+		FF95B98224649D40008B4147 /* GSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98124649D40008B4147 /* GSViewController.swift */; };
+		FF95B98424649D64008B4147 /* GSActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98324649D64008B4147 /* GSActivityViewController.swift */; };
+		FF95B98624649D70008B4147 /* GSProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98524649D70008B4147 /* GSProgressViewController.swift */; };
+		FF95B98824649E87008B4147 /* logoIcon white.png in Resources */ = {isa = PBXBuildFile; fileRef = FF95B98724649E87008B4147 /* logoIcon white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		69C020692461FA6600CDC30F /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
 		69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		FF95B97F24649CB5008B4147 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		FF95B98124649D40008B4147 /* GSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSViewController.swift; sourceTree = "<group>"; };
+		FF95B98324649D64008B4147 /* GSActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSActivityViewController.swift; sourceTree = "<group>"; };
+		FF95B98524649D70008B4147 /* GSProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSProgressViewController.swift; sourceTree = "<group>"; };
+		FF95B98724649E87008B4147 /* logoIcon white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoIcon white.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +137,7 @@
 				69493EA8245B0B51001B9D15 /* Controllers */,
 				69493E9A245A1682001B9D15 /* View */,
 				69493E762459C746001B9D15 /* Info.plist */,
+				FF95B98724649E87008B4147 /* logoIcon white.png */,
 			);
 			path = Byrd;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 				69493E98245A1666001B9D15 /* TabBar.storyboard */,
 				69493EB5245B12B9001B9D15 /* Progress.storyboard */,
 				69C02058245CCF6A00CDC30F /* Goals.storyboard */,
+				FF95B97F24649CB5008B4147 /* Onboarding.storyboard */,
 				69493E712459C746001B9D15 /* Assets.xcassets */,
 				69493E732459C746001B9D15 /* LaunchScreen.storyboard */,
 			);
@@ -173,6 +185,9 @@
 				69C020692461FA6600CDC30F /* PickerTableViewCell.xib */,
 				69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */,
 				69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */,
+				FF95B98124649D40008B4147 /* GSViewController.swift */,
+				FF95B98324649D64008B4147 /* GSActivityViewController.swift */,
+				FF95B98524649D70008B4147 /* GSProgressViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,8 +300,10 @@
 				69493E99245A1666001B9D15 /* TabBar.storyboard in Resources */,
 				69C0206B2461FA6600CDC30F /* PickerTableViewCell.xib in Resources */,
 				69493EB6245B12B9001B9D15 /* Progress.storyboard in Resources */,
+				FF95B98824649E87008B4147 /* logoIcon white.png in Resources */,
 				69C0206324619AF700CDC30F /* SwitchTableViewCell.xib in Resources */,
 				69493E722459C746001B9D15 /* Assets.xcassets in Resources */,
+				FF95B98024649CB5008B4147 /* Onboarding.storyboard in Resources */,
 				69C02059245CCF6A00CDC30F /* Goals.storyboard in Resources */,
 				69C0206F2462193900CDC30F /* TextFieldTableViewCell.xib in Resources */,
 			);
@@ -315,6 +332,7 @@
 			files = (
 				69493EBC245B56AE001B9D15 /* Goals.swift in Sources */,
 				69C0206224619AF700CDC30F /* SwitchTableViewCell.swift in Sources */,
+				FF95B98224649D40008B4147 /* GSViewController.swift in Sources */,
 				69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */,
 				69493E692459C741001B9D15 /* AppDelegate.swift in Sources */,
 				69C0205D24604FE500CDC30F /* OptionsViewController.swift in Sources */,
@@ -322,6 +340,8 @@
 				69C0206E2462193900CDC30F /* TextFieldTableViewCell.swift in Sources */,
 				69493E6B2459C741001B9D15 /* SceneDelegate.swift in Sources */,
 				69493EB8245B54C1001B9D15 /* GoalsViewController.swift in Sources */,
+				FF95B98424649D64008B4147 /* GSActivityViewController.swift in Sources */,
+				FF95B98624649D70008B4147 /* GSProgressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
