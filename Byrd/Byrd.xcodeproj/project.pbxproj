@@ -14,9 +14,32 @@
 		69493E802459C747001B9D15 /* ByrdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493E7F2459C747001B9D15 /* ByrdTests.swift */; };
 		69493E8B2459C747001B9D15 /* ByrdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493E8A2459C747001B9D15 /* ByrdUITests.swift */; };
 		69493E99245A1666001B9D15 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493E98245A1666001B9D15 /* TabBar.storyboard */; };
-		69493E9C245A177C001B9D15 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493E9B245A177C001B9D15 /* Progress.storyboard */; };
-		69493E9E245A1786001B9D15 /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493E9D245A1786001B9D15 /* Goals.storyboard */; };
-		69493EA0245A178F001B9D15 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493E9F245A178F001B9D15 /* Profile.storyboard */; };
+		69493EB6245B12B9001B9D15 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69493EB5245B12B9001B9D15 /* Progress.storyboard */; };
+		69493EB8245B54C1001B9D15 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493EB7245B54C1001B9D15 /* GoalsViewController.swift */; };
+		69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493EB9245B54E2001B9D15 /* GoalsListTableViewCell.swift */; };
+		69493EBC245B56AE001B9D15 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69493EBB245B56AE001B9D15 /* Goals.swift */; };
+		69C02059245CCF6A00CDC30F /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C02058245CCF6A00CDC30F /* Goals.storyboard */; };
+		69C0205D24604FE500CDC30F /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0205C24604FE500CDC30F /* OptionsViewController.swift */; };
+		69C0206224619AF700CDC30F /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0206024619AF700CDC30F /* SwitchTableViewCell.swift */; };
+		69C0206324619AF700CDC30F /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C0206124619AF700CDC30F /* SwitchTableViewCell.xib */; };
+		69C0206A2461FA6600CDC30F /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C020682461FA6600CDC30F /* PickerTableViewCell.swift */; };
+		69C0206B2461FA6600CDC30F /* PickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C020692461FA6600CDC30F /* PickerTableViewCell.xib */; };
+		69C0206E2462193900CDC30F /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */; };
+		69C0206F2462193900CDC30F /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */; };
+		FF95B98024649CB5008B4147 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF95B97F24649CB5008B4147 /* Onboarding.storyboard */; };
+		FF95B98224649D40008B4147 /* GSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98124649D40008B4147 /* GSViewController.swift */; };
+		FF95B98424649D64008B4147 /* GSActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98324649D64008B4147 /* GSActivityViewController.swift */; };
+		FF95B98624649D70008B4147 /* GSProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF95B98524649D70008B4147 /* GSProgressViewController.swift */; };
+		FF95B98824649E87008B4147 /* logoIcon white.png in Resources */ = {isa = PBXBuildFile; fileRef = FF95B98724649E87008B4147 /* logoIcon white.png */; };
+		EC548A312461AF5F000737E2 /* foodDailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A302461AF5F000737E2 /* foodDailyViewController.swift */; };
+		EC548A332461AFC0000737E2 /* FoodDailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC548A322461AFC0000737E2 /* FoodDailyView.swift */; };
+		EC7211772462E0A6006427A5 /* remainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7211762462E0A6006427A5 /* remainView.swift */; };
+		EC72117B2462ECD5006427A5 /* foodMonthlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */; };
+		ECFB9930246045D60076E8FC /* progressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB992F246045D60076E8FC /* progressViewController.swift */; };
+		ECFB9932246045EB0076E8FC /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9931246045EB0076E8FC /* colors.swift */; };
+		ECFB9934246045F50076E8FC /* fontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9933246045F50076E8FC /* fontFamily.swift */; };
+		ECFB9936246046070076E8FC /* progressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9935246046070076E8FC /* progressView.swift */; };
+		ECFB9938246046150076E8FC /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB9937246046150076E8FC /* cardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +73,32 @@
 		69493E8A2459C747001B9D15 /* ByrdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByrdUITests.swift; sourceTree = "<group>"; };
 		69493E8C2459C747001B9D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69493E98245A1666001B9D15 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
-		69493E9B245A177C001B9D15 /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
-		69493E9D245A1786001B9D15 /* Goals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
-		69493E9F245A178F001B9D15 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		69493EB5245B12B9001B9D15 /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
+		69493EB7245B54C1001B9D15 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		69493EB9245B54E2001B9D15 /* GoalsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListTableViewCell.swift; sourceTree = "<group>"; };
+		69493EBB245B56AE001B9D15 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		69C02058245CCF6A00CDC30F /* Goals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
+		69C0205C24604FE500CDC30F /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		69C0206024619AF700CDC30F /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		69C0206124619AF700CDC30F /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchTableViewCell.xib; sourceTree = "<group>"; };
+		69C020682461FA6600CDC30F /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		69C020692461FA6600CDC30F /* PickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerTableViewCell.xib; sourceTree = "<group>"; };
+		69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		FF95B97F24649CB5008B4147 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		FF95B98124649D40008B4147 /* GSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSViewController.swift; sourceTree = "<group>"; };
+		FF95B98324649D64008B4147 /* GSActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSActivityViewController.swift; sourceTree = "<group>"; };
+		FF95B98524649D70008B4147 /* GSProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSProgressViewController.swift; sourceTree = "<group>"; };
+		FF95B98724649E87008B4147 /* logoIcon white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logoIcon white.png"; sourceTree = "<group>"; };
+		EC548A302461AF5F000737E2 /* foodDailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDailyViewController.swift; sourceTree = "<group>"; };
+		EC548A322461AFC0000737E2 /* FoodDailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDailyView.swift; sourceTree = "<group>"; };
+		EC7211762462E0A6006427A5 /* remainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remainView.swift; sourceTree = "<group>"; };
+		EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodMonthlyViewController.swift; sourceTree = "<group>"; };
+		ECFB992F246045D60076E8FC /* progressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressViewController.swift; sourceTree = "<group>"; };
+		ECFB9931246045EB0076E8FC /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		ECFB9933246045F50076E8FC /* fontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontFamily.swift; sourceTree = "<group>"; };
+		ECFB9935246046070076E8FC /* progressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progressView.swift; sourceTree = "<group>"; };
+		ECFB9937246046150076E8FC /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +151,11 @@
 			children = (
 				69493E682459C741001B9D15 /* AppDelegate.swift */,
 				69493E6A2459C741001B9D15 /* SceneDelegate.swift */,
+				69493EBB245B56AE001B9D15 /* Goals.swift */,
+				69493EA8245B0B51001B9D15 /* Controllers */,
 				69493E9A245A1682001B9D15 /* View */,
 				69493E762459C746001B9D15 /* Info.plist */,
+				FF95B98724649E87008B4147 /* logoIcon white.png */,
 			);
 			path = Byrd;
 			sourceTree = "<group>";
@@ -132,14 +181,74 @@
 		69493E9A245A1682001B9D15 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECFB992E246045A10076E8FC /* progressView */,
 				69493E98245A1666001B9D15 /* TabBar.storyboard */,
-				69493E9B245A177C001B9D15 /* Progress.storyboard */,
-				69493E9D245A1786001B9D15 /* Goals.storyboard */,
-				69493E9F245A178F001B9D15 /* Profile.storyboard */,
+				69493EB5245B12B9001B9D15 /* Progress.storyboard */,
+				69C02058245CCF6A00CDC30F /* Goals.storyboard */,
+				FF95B97F24649CB5008B4147 /* Onboarding.storyboard */,
 				69493E712459C746001B9D15 /* Assets.xcassets */,
 				69493E732459C746001B9D15 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		69493EA8245B0B51001B9D15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69493EB7245B54C1001B9D15 /* GoalsViewController.swift */,
+				69493EB9245B54E2001B9D15 /* GoalsListTableViewCell.swift */,
+				69C0205C24604FE500CDC30F /* OptionsViewController.swift */,
+				69C0206024619AF700CDC30F /* SwitchTableViewCell.swift */,
+				69C0206124619AF700CDC30F /* SwitchTableViewCell.xib */,
+				69C020682461FA6600CDC30F /* PickerTableViewCell.swift */,
+				69C020692461FA6600CDC30F /* PickerTableViewCell.xib */,
+				69C0206C2462193900CDC30F /* TextFieldTableViewCell.swift */,
+				69C0206D2462193900CDC30F /* TextFieldTableViewCell.xib */,
+				FF95B98124649D40008B4147 /* GSViewController.swift */,
+				FF95B98324649D64008B4147 /* GSActivityViewController.swift */,
+				FF95B98524649D70008B4147 /* GSProgressViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC548A2E2461AE01000737E2 /* FoodView */ = {
+			isa = PBXGroup;
+			children = (
+				EC7211792462ECB3006427A5 /* Monthly */,
+				EC548A2F2461AF30000737E2 /* Daily */,
+			);
+			path = FoodView;
+			sourceTree = "<group>";
+		};
+		EC548A2F2461AF30000737E2 /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				EC548A302461AF5F000737E2 /* foodDailyViewController.swift */,
+				EC548A322461AFC0000737E2 /* FoodDailyView.swift */,
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
+		EC7211792462ECB3006427A5 /* Monthly */ = {
+			isa = PBXGroup;
+			children = (
+				EC72117A2462ECD5006427A5 /* foodMonthlyViewController.swift */,
+			);
+			path = Monthly;
+			sourceTree = "<group>";
+		};
+		ECFB992E246045A10076E8FC /* progressView */ = {
+			isa = PBXGroup;
+			children = (
+				EC548A2E2461AE01000737E2 /* FoodView */,
+				ECFB992F246045D60076E8FC /* progressViewController.swift */,
+				ECFB9931246045EB0076E8FC /* colors.swift */,
+				ECFB9933246045F50076E8FC /* fontFamily.swift */,
+				ECFB9935246046070076E8FC /* progressView.swift */,
+				ECFB9937246046150076E8FC /* cardView.swift */,
+				EC7211762462E0A6006427A5 /* remainView.swift */,
+			);
+			path = progressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,12 +355,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69493EA0245A178F001B9D15 /* Profile.storyboard in Resources */,
-				69493E9E245A1786001B9D15 /* Goals.storyboard in Resources */,
 				69493E752459C746001B9D15 /* LaunchScreen.storyboard in Resources */,
 				69493E99245A1666001B9D15 /* TabBar.storyboard in Resources */,
+				69C0206B2461FA6600CDC30F /* PickerTableViewCell.xib in Resources */,
+				69493EB6245B12B9001B9D15 /* Progress.storyboard in Resources */,
+				FF95B98824649E87008B4147 /* logoIcon white.png in Resources */,
+				69C0206324619AF700CDC30F /* SwitchTableViewCell.xib in Resources */,
 				69493E722459C746001B9D15 /* Assets.xcassets in Resources */,
-				69493E9C245A177C001B9D15 /* Progress.storyboard in Resources */,
+				FF95B98024649CB5008B4147 /* Onboarding.storyboard in Resources */,
+				69C02059245CCF6A00CDC30F /* Goals.storyboard in Resources */,
+				69C0206F2462193900CDC30F /* TextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +389,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69493EBC245B56AE001B9D15 /* Goals.swift in Sources */,
+				69C0206224619AF700CDC30F /* SwitchTableViewCell.swift in Sources */,
+				FF95B98224649D40008B4147 /* GSViewController.swift in Sources */,
+				ECFB9930246045D60076E8FC /* progressViewController.swift in Sources */,
+				ECFB9932246045EB0076E8FC /* colors.swift in Sources */,
+				69493EBA245B54E2001B9D15 /* GoalsListTableViewCell.swift in Sources */,
+				ECFB9938246046150076E8FC /* cardView.swift in Sources */,
+				EC72117B2462ECD5006427A5 /* foodMonthlyViewController.swift in Sources */,
+				ECFB9934246045F50076E8FC /* fontFamily.swift in Sources */,
+				ECFB9936246046070076E8FC /* progressView.swift in Sources */,
 				69493E692459C741001B9D15 /* AppDelegate.swift in Sources */,
+				69C0205D24604FE500CDC30F /* OptionsViewController.swift in Sources */,
+				69C0206A2461FA6600CDC30F /* PickerTableViewCell.swift in Sources */,
+				69C0206E2462193900CDC30F /* TextFieldTableViewCell.swift in Sources */,
+				EC548A332461AFC0000737E2 /* FoodDailyView.swift in Sources */,
 				69493E6B2459C741001B9D15 /* SceneDelegate.swift in Sources */,
+				EC548A312461AF5F000737E2 /* foodDailyViewController.swift in Sources */,
+				EC7211772462E0A6006427A5 /* remainView.swift in Sources */,
+				69493EB8245B54C1001B9D15 /* GoalsViewController.swift in Sources */,
+				FF95B98424649D64008B4147 /* GSActivityViewController.swift in Sources */,
+				FF95B98624649D70008B4147 /* GSProgressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +576,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Byrd/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Byrd/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

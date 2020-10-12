@@ -9,7 +9,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yMp-YW-Mt0">
             <objects>
-                <tabBarController id="VFF-9u-sS8" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarVC" id="VFF-9u-sS8" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eom-o0-jG4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -17,9 +17,8 @@
                         <color key="selectedImageTintColor" red="0.98037606479999995" green="0.55167585610000003" blue="0.60024565460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2P9-xM-aIP" kind="relationship" relationship="viewControllers" id="3cy-gY-qsP"/>
-                        <segue destination="507-hr-5F3" kind="relationship" relationship="viewControllers" id="wTE-61-s08"/>
-                        <segue destination="iao-lo-XPS" kind="relationship" relationship="viewControllers" id="weH-cG-RfV"/>
+                        <segue destination="Vxv-QR-Vqr" kind="relationship" relationship="viewControllers" id="qu0-M9-Dq6"/>
+                        <segue destination="7p8-ew-rzH" kind="relationship" relationship="viewControllers" id="q4d-dw-gYl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gpr-h0-ZPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -27,34 +26,24 @@
             <point key="canvasLocation" x="319" y="-715"/>
         </scene>
         <!--Progress-->
-        <scene sceneID="8Ff-PN-XQR">
+        <scene sceneID="csJ-98-4SO">
             <objects>
-                <viewControllerPlaceholder storyboardName="Progress" id="2P9-xM-aIP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Gwk-kn-H3V"/>
+                <viewControllerPlaceholder storyboardName="Progress" id="Vxv-QR-Vqr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Tgr-4d-rsW"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iUa-eW-7lb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBW-Qq-FIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="-852"/>
+            <point key="canvasLocation" x="959" y="-832"/>
         </scene>
         <!--Goals-->
-        <scene sceneID="aAg-V4-8g3">
+        <scene sceneID="hJr-sb-tKs">
             <objects>
-                <viewControllerPlaceholder storyboardName="Goals" id="507-hr-5F3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DXe-QK-Hkt"/>
+                <viewControllerPlaceholder storyboardName="Goals" id="7p8-ew-rzH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="xMA-4v-3U5"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OCZ-2l-cpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2K-Ul-0VK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="-715"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="NZo-Co-LfZ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="iao-lo-XPS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Mxp-d3-AYC"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UyC-CC-6wQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1119" y="-583"/>
+            <point key="canvasLocation" x="974" y="-715"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.98037606479999995" green="0.55167585610000003" blue="0.60024565460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
